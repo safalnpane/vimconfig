@@ -7,11 +7,7 @@ setlocal autoindent
 setlocal smartindent
 setlocal smarttab
 
-let g:pyindent_open_paren='shiftwidth()'
-setlocal keywordprg=python3\ -m\ pydoc
-
 setlocal textwidth=81
 setlocal formatoptions-=o
 
-nnoremap <buffer> <leader>r :execute '!'. get(g:, 'venv_python', 'python3') . ' %'<CR>
-
+nnoremap <buffer> <leader>r :make run %<CR>

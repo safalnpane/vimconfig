@@ -10,5 +10,5 @@ setlocal smarttab
 setlocal textwidth=80
 setlocal formatoptions-=o
 
-nnoremap <buffer> <leader>r :!node %<CR>
+nnoremap <buffer> <leader>r :!ts-node %<CR>
 
